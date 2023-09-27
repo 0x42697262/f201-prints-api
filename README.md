@@ -64,6 +64,7 @@ Copy the `./.env.dist` file and rename it to `.env`.
 ```
 DEBUG=boolean
 SECRET_KEY=secret
+POSTGRES_DB=db
 POSTGRES_USERNAME=username
 POSTGRES_PASSWORD=password
 POSTGRES_HOST=host

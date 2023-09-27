@@ -47,6 +47,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Our modules
+    'shop',
+    'bookings',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +90,7 @@ WSGI_APPLICATION = 'f201prints.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "timecapsule",
+        "NAME": env('POSTGRES_DB'),
         "USER": env('POSTGRES_USERNAME'),
         "PASSWORD": env('POSTGRES_PASSWORD'),
         "HOST": env('POSTGRES_HOST'),
