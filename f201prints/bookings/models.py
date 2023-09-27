@@ -113,6 +113,7 @@ class FilePage(models.Model):
     color       = models.PositiveSmallIntegerField(default=0)
     quality     = models.PositiveSmallIntegerField(default=0)
     # paper_type  = models.ForeignKey(PaperType, on_delete=models.CASCADE, related_name="paper_type")
-    paper_type  = models.TextField(max_length=16, null=True, blank=True)
+    # paper_type  = models.ForeignKey(PaperType, on_delete=models.CASCADE, related_name="paper_type")
+    paper_type  = models.CharField(max_length=16, null=True, blank=True)
     pages       = models.CharField(max_length=100, default='ALL')
     comment     = models.TextField(max_length=100, null=True, blank=True)
